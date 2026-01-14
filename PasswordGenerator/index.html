@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+    </div>
+    <div class="display-container">
+      <input
+        readonly
+        placeholder="Password"
+        class="display"
+        data-Passworddisplay
+      />
+      <button>
+        <span data-copyMessage></span>
+        <img src="copy.png" height="24" width="24">
+      </button>
+    </div>
+    <div class="input-container">
+      <div class="length-container">
+        <p>Password length</p>
+        <p data-lengthNumber>0</p>
+      </div>
+      <!-- slider -->
+      <input type="range" name="" id="" max="20" step="1" data=-lengthSlider>
+      <!-- checkboxes -->
+       <div class="checkbox">
+        <input type="checkbox" name="" id="uppercase">
+       <label for="uppercase">Include Uppercase letter</label>
+       
+       </div>
+       <div class="checkbox">
+        <input type="checkbox" name="" id="lowercase">
+       <label for="Lowercase">Include Lowercase letter</label>
+       
+       </div>
+       <div class="checkbox">
+        <input type="checkbox" name="" id="number">
+       <label for="number">Include number</label>
+       
+       </div>
+       <div class="checkbox">
+        <input type="checkbox" name="" id="symbol">
+       <label for="symbol">Include symbol</label>
+       
+       </div>
+       <div class="generate">
+        <button>Generator OTP</button>
+       </div>
+    </div>
+  </body>
+</html>
