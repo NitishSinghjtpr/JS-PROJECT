@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love calculator</title>
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #000000, #2c2c2c);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form{
+            background: #1e1e1e;
+            padding: 2rem 2.5rem;
+            border-radius: 12px;
+            width: 320px;
+            box-shadow: 0 0 20px rgba(255, 0, 100, 0.4);
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #ff4d6d;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background: #ff1f4b;
+            transform: scale(1.03);
+        }
+
+        h2{
+            margin-top: 1.2rem;
+            text-align: center;
+            color: #ffd6e0;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white; display: flex; margin-top: 5rem; justify-content: center; align-items: baseline; height: 100vh;">
+    <form action="">
+        <h1 style="background-color: rgb(56, 45, 47); color: brown;">Love calculator</h1>
+        <label for="Boy">Boy</label>
+        <input type="text" id="Boy" required>
+        <br><br>
+        <label for="Girl">Girl</label>
+        <input type="text" id="Girl" required>
+        <br><br>
+        <button type="submit">Calculate</button>
+        <br>
+        <h2>Result: </h2>
+    </form>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
